@@ -1,3 +1,3 @@
-from py_jisho import test
+from ..src import py_jisho
 
-print(test())
+py_jisho.search('ki')

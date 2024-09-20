@@ -19,9 +19,7 @@ def _parse_data(payload: dict) -> dict:
     for entry in payload.get('data', {}):
         slug = entry.get('slug', '')
         senses = entry.get('senses', [])
-        reading = ''
-        if slug in entry.get('japanese', {})[0]:
-            reading = entry.get('japanese', {})[0].get('reading', '')
+        reading = entry.get('japanese', {})[0].get('reading', '')
 
         result[slug] = {
             'reading': reading,
