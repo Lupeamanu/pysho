@@ -1,3 +1,5 @@
-from ..src import py_jisho
+from py_jisho.jisho import search
 
-py_jisho.search('ki')
+ki_results = search('ki')
+
+print(ki_results)

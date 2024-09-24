@@ -47,7 +47,8 @@ def search(keyword: str) -> dict:
         r_json = r.json()
 
         result: dict = _parse_data(r_json)
-        print(result)
+        
+        return result
 
     except Exception as err:
         print(f'[ERROR] Error occurred when querying API:\n{traceback.format_exc(err)}')

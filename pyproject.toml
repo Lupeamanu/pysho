@@ -3,8 +3,8 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "py-jisho"
-version = "0.0.1"
+name = "py_jisho"
+version = "0.0.2"
 authors = [
   { name="Logan Lupeamanu", email="LupeamanuLogan@gmail.com" },
 ]
